@@ -1,2 +1,0 @@
-# OaklyHaven-Proyect
-School assignment.
