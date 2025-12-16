@@ -1,0 +1,154 @@
+/*
+#85431e CINNAMON
+#d39858 LIGHT CAPPUCINO
+#7f482f
+#25150e DARKEST CHOCO
+#4b2b1b MID_DARD BROWN /// cocoa
+#4d2f1f
+#c7967e Paler #b99785
+#dfbaa5 Another pale color #f0cebe
+#916b55 Main MID-Dark
+#1f140d
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+.header {
+    padding: 10px;
+    text-align: center;
+    background: #c7967e;
+    color: #2b1e16;
+}
+
+.header h1 {
+    padding: 20px;
+    background: #dfbaa5;
+}
+
+.navbar {
+    display: flex;
+    background-color: #f0cebe;
+    justify-content: space-between;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar a {
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    color: #2b1e16;
+}
+
+.navbar a:hover {
+    background-color: #a17f70;
+    color: #fff5ea;
+    padding: 13px;
+}
+
+.pagemap {
+    display: flex;
+    background-color: #c7967e;
+    padding: 16px 30px;
+}
+
+.pagemap a {
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #c7967e;
+    color: #1f140d;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.pagemap a:hover {
+    background-color: #dfbaa5;
+    color: #331e15;
+    font-weight: 400;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.side {
+    flex: 25%;
+    background-color: #dfbaa5;
+    padding: 20px;
+    color: #1f140d;
+}
+
+.main {
+    flex: 75%;
+    background-color: #855a41;
+    padding: 20px;
+    color: #1f140d;
+}
+
+.fakeimg {
+    background-color: #c7967e;
+    width: 100%;
+    padding: 20px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    background:#85431e;
+}
+
+@media screen and (max-width: 700px) {
+.row,
+.navbar {
+    flex-direction: column;
+}        
+}
+
+.intro {
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    grid-template-columns: repeat(autofit, minmax(140px,1fr));
+    gap: 1rem;
+    padding: 1rem 1rem;
+}
+  .card {
+    width: 30%;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card img {
+    width: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card:hover img {
+    transform: scale(1.1);
+  }
